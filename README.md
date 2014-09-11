@@ -9,4 +9,4 @@ VicmapLite is a Creative Commons dataset released by the Victorian Government. D
 
 The VicmapLite data has been imported into a PostGIS database called VicmapLite loaded from there.
 
-Relief for the image uses the attached tif file.
+Relief image for the hill shade can be downloaded from the link on the 'relief' page.

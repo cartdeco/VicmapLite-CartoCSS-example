@@ -1,0 +1,338 @@
+{
+  "bounds": [
+    140.5261,
+    -39.4616,
+    150.3369,
+    -33.6786
+  ],
+  "center": [
+    145.1843,
+    -36.7565,
+    7
+  ],
+  "format": "png8",
+  "interactivity": {
+    "layer": "vmliteroads"
+  },
+  "minzoom": 7,
+  "maxzoom": 10,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "palette.mss",
+    "labels.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        139.46152790671195,
+        -40.17971128335729,
+        152.36308173541553,
+        -32.043093144191495
+      ],
+      "id": "victoriareliefwm",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\svproject\\Data\\Australia\\Victoria\\Victoria_relief_WM.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "victoriareliefwm"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        140.554499949,
+        -38.831295683,
+        149.98864586,
+        -34.162653083
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * FROM vmlite_built_up_area) AS data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "140.554499949,-38.831295683,149.98864586,-34.162653083",
+        "host": "localhost",
+        "port": "5432",
+        "password": "cartdeco",
+        "dbname": "VicmapLite",
+        "user": "postgres",
+        "id": "vmlitebuiltupareaasd",
+        "project": "VicmapLite",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "vmlitebuiltupareaasd",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "vmlitebuiltupareaasd"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        140.5013742,
+        -39.15919275,
+        150.068242975,
+        -33.49850795
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * FROM vmlite_victoria_line_su5) AS data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "140.5013742,-39.15919275,150.068242975,-33.49850795",
+        "host": "localhost",
+        "port": "5432",
+        "password": "cartdeco",
+        "dbname": "VicmapLite",
+        "user": "postgres",
+        "id": "Victorialine",
+        "project": "VicmapLite",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "Victorialine",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "Victorialine"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        140.963719061,
+        -39.090042541,
+        150.05846524,
+        -33.000071324
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * FROM vmlite_hy_watercourse) AS data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "140.963719061,-39.090042541,150.05846524,-33.000071324",
+        "host": "localhost",
+        "port": "5432",
+        "password": "cartdeco",
+        "dbname": "VicmapLite",
+        "user": "postgres",
+        "id": "vmlitehywatercoursea",
+        "project": "VicmapLite",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "vmlitehywatercoursea",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "vmlitehywatercoursea"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        140.501329157,
+        -39.077833405,
+        150.058323166,
+        -33.000214861
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * FROM vmlite_hy_water_area) AS data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "140.501329157,-39.077833405,150.058323166,-33.000214861",
+        "host": "localhost",
+        "port": "5432",
+        "password": "cartdeco",
+        "dbname": "VicmapLite",
+        "user": "postgres",
+        "id": "vmlitehywaterareaasd",
+        "project": "VicmapLite",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "vmlitehywaterareaasd",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "vmlitehywaterareaasd"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        140.501340589,
+        -38.478164017,
+        147.627283258,
+        -34.124768622
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * FROM vmlite_tr_rail) AS data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "140.501340589,-38.478164017,147.627283258,-34.124768622",
+        "host": "localhost",
+        "port": "5432",
+        "password": "cartdeco",
+        "dbname": "VicmapLite",
+        "user": "postgres",
+        "id": "vmlitetrrailasdata",
+        "project": "VicmapLite",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "vmlitetrrailasdata",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "vmlitetrrailasdata"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        140.501326887,
+        -39.033143792,
+        150.053242818,
+        -33.000005755
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * FROM vmlite_tr_road WHERE ftype_code='tunnel') AS data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "140.501326887,-39.033143792,150.053242818,-33.000005755",
+        "host": "localhost",
+        "port": "5432",
+        "password": "cartdeco",
+        "dbname": "VicmapLite",
+        "user": "postgres",
+        "id": "vmlitetunnels",
+        "project": "VicmapLite",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "vmlitetunnels",
+      "class": "tunnels",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "vmlitetunnels"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        140.501326887,
+        -39.033143792,
+        150.053242818,
+        -33.000005755
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * FROM vmlite_tr_road WHERE ftype_code='road') AS data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "140.501326887,-39.033143792,150.053242818,-33.000005755",
+        "host": "localhost",
+        "port": "5432",
+        "password": "cartdeco",
+        "dbname": "VicmapLite",
+        "user": "postgres",
+        "id": "vmliteroads",
+        "project": "VicmapLite",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "vmliteroads",
+      "class": "roads",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "vmliteroads"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        140.5013185,
+        -39.198552817,
+        150.5012456,
+        -32.999999992
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * FROM vmlite_victoria_polygon_su5 WHERE STATE_NAME='VICTORIA') AS data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "140.5013185,-39.198552817,150.5012456,-32.999999992",
+        "host": "localhost",
+        "port": "5432",
+        "password": "cartdeco",
+        "dbname": "VicmapLite",
+        "user": "postgres"
+      },
+      "id": "vmlitevictoriapolygo",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "vmlitevictoriapolygo"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        139.04575,
+        -39.029915,
+        151.482558,
+        -33.040144
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * FROM vmlite_locality WHERE state='VIC') AS data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "139.04575,-39.029915,151.482558,-33.040144",
+        "host": "localhost",
+        "port": "5432",
+        "password": "cartdeco",
+        "dbname": "VicmapLite",
+        "user": "postgres",
+        "id": "vmlitelocalityasdata",
+        "project": "VicmapLite",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "vmlitelocalityasdata",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "vmlitelocalityasdata"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "VicmapLite",
+  "description": "Victoria - VicmapLite",
+  "attribution": "© The State of Victoria Department of Environment and Primary Industries 2013",
+  "version": "1.0.0",
+  "legend": ""
+}
